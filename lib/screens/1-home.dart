@@ -17,10 +17,8 @@ class _HomeState extends State<Home> {
       body: Stack(
         fit: StackFit.expand,
         children: [
-          // ================= BACKGROUND IMAGE =================
           Image.asset('assets/images/image.png', fit: BoxFit.cover),
 
-          // ================= DARK OVERLAY =================
           Container(
             decoration: BoxDecoration(
               gradient: LinearGradient(
@@ -34,17 +32,14 @@ class _HomeState extends State<Home> {
             ),
           ),
 
-          // ================= CONTENT =================
           SafeArea(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                // Logo
                 const Icon(Icons.eco, color: Colors.white, size: 30),
 
                 const SizedBox(height: 8),
 
-                // Welcome
                 const Text(
                   'Welcome',
                   style: TextStyle(
@@ -54,7 +49,6 @@ class _HomeState extends State<Home> {
                   ),
                 ),
 
-                // to our store
                 const Text(
                   'to our store',
                   style: TextStyle(
@@ -66,7 +60,6 @@ class _HomeState extends State<Home> {
 
                 const SizedBox(height: 10),
 
-                // Description
                 const Text(
                   'Grow your groceries with us at home',
                   style: TextStyle(color: Colors.white70, fontSize: 14),
@@ -74,7 +67,6 @@ class _HomeState extends State<Home> {
 
                 const SizedBox(height: 25),
 
-                // ================= GET STARTED =================
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   child: SizedBox(

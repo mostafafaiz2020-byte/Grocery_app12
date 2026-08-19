@@ -1,4 +1,5 @@
 // widgets/shop_header.dart
+
 import 'package:flutter/material.dart';
 
 class ShopHeader extends StatelessWidget {

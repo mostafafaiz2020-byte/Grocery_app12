@@ -3,9 +3,8 @@
 import '4-BottomNavigationBar.dart';
 import 'package:flutter/material.dart';
 import 'package:grocery_app1/widgets/login_Logo.dart';
-
-import '../widgets/login_header.dart';
 import '../widgets/email_field.dart';
+import '../widgets/login_header.dart';
 import '../widgets/password_field.dart';
 import '../widgets/forgot_password.dart';
 import '../widgets/login_button.dart';
@@ -64,7 +63,10 @@ class _LogingScrreenState extends State<LogingScrreen> {
 
                   const SizedBox(height: 35),
 
-                  EmailField(controller: emailController),
+                  EmailField(
+                    controller: emailController,
+                    onChanged: (String value) {},
+                  ),
 
                   const SizedBox(height: 28),
 

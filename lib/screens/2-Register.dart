@@ -2,11 +2,11 @@
 
 import 'package:flutter/material.dart';
 import 'package:grocery_app1/widgets/login_Logo.dart';
+import 'package:grocery_app1/widgets/password_field.dart';
 
 import '../widgets/register_header.dart';
 import '../widgets/username_field.dart';
-import '../widgets/register_email_field.dart';
-import '../widgets/register_password_field.dart';
+import '../widgets/email_field.dart';
 import '../widgets/terms_text.dart';
 import '../widgets/signup_button.dart';
 import '../widgets/login_row.dart';
@@ -86,14 +86,14 @@ class _RegisterScreenState extends State<RegisterScreen> {
 
                   const SizedBox(height: 25),
 
-                  RegisterEmailField(
+                  EmailField(
                     controller: emailController,
                     onChanged: onEmailChanged,
                   ),
 
                   const SizedBox(height: 25),
 
-                  RegisterPasswordField(
+                  PasswordField(
                     controller: passwordController,
                     isPasswordHidden: isPasswordHidden,
                     onToggle: togglePassword,
