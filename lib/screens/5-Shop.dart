@@ -1,11 +1,13 @@
 // screens/5-Shop.dart
 import 'package:flutter/material.dart';
 
-import '../widgets/shop_header.dart';
-import '../widgets/shop_search.dart';
-import '../widgets/section_title.dart';
-import '../widgets/shop_banner_slider.dart';
-import '../widgets/products_grid.dart';
+import 'package:grocery_app1/model/product_model.dart';
+import 'package:grocery_app1/widgets/5_%20Shop%20Slider.dart';
+import 'package:grocery_app1/widgets/5_data/products.dart';
+import 'package:grocery_app1/widgets/5_product_item.dart';
+
+import '../widgets/5_shop_header.dart';
+import '../widgets/5_shop_search.dart';
 
 class Shop extends StatefulWidget {
   const Shop({super.key});
@@ -15,42 +17,112 @@ class Shop extends StatefulWidget {
 }
 
 class _ShopState extends State<Shop> {
-  List<String> bannerImages = [
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOugGlF2Qd8mRk1r5kNeF84gL40_E8uW_GFsy-zerFWQ&s=10",
-    "https://www.shutterstock.com/image-photo/full-grocery-bag-smartphone-blank-260nw-2230311385.jpg",
-    "https://t3.ftcdn.net/jpg/19/91/86/40/360_F_1991864009_MfAWQ2BGnP6vF0WUiI0Q4Jv3yF7ap3nk.jpg",
-    "https://teamtweaks1-blog.s3.us-east-2.amazonaws.com/blog/wp-content/uploads/2023/03/16062712/TT-Best-grocery-app-development-companies-2023.png",
-  ];
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
+
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 24, vertical: 10),
+            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 10),
             child: Column(
               children: [
-                ShopHeader(),
-                SizedBox(height: 20),
-                SearchStore(),
-                SizedBox(height: 20),
+                // Header
+                const ShopHeader(),
 
-                ShopBannerSlider(images: bannerImages),
-                SizedBox(height: 30),
+                const SizedBox(height: 20),
 
-                SectionTitle(title: 'Exclusive Offer'),
-                SizedBox(height: 20),
+                // Search
+                const SearchStore(),
 
-                ProductsGrid(),
+                const SizedBox(height: 20),
 
-                SizedBox(height: 20),
+                // Slider
+                const slider(),
+
+                const SizedBox(height: 20),
+
+                // Exclusive Offer
+                sectionTitle(title: 'Exclusive Offer'),
+
+                const SizedBox(height: 20),
+
+                SizedBox(
+                  height: 248.51,
+                  child: ListView.separated(
+                    scrollDirection: Axis.horizontal,
+                    itemCount: products.length,
+
+                    itemBuilder: (context, index) {
+                      ProductModel product = products[index];
+
+                      return Exclusive(productModel: product);
+                    },
+
+                    separatorBuilder: (context, index) {
+                      return const SizedBox(width: 10);
+                    },
+                  ),
+                ),
+
+                const SizedBox(height: 30),
+
+                // Best Selling
+                sectionTitle(title: 'Best Selling'),
+
+                const SizedBox(height: 20),
+
+                SizedBox(
+                  height: 248.51,
+                  child: ListView.separated(
+                    scrollDirection: Axis.horizontal,
+                    itemCount: products.length,
+
+                    itemBuilder: (context, index) {
+                      ProductModel product = products[index];
+
+                      return Exclusive(productModel: product);
+                    },
+
+                    separatorBuilder: (context, index) {
+                      return const SizedBox(width: 10);
+                    },
+                  ),
+                ),
+
+                const SizedBox(height: 30),
+
+                // Groceries
+                sectionTitle(title: 'Groceries'),
+
+                const SizedBox(height: 20),
               ],
             ),
           ),
         ),
       ),
+    );
+  }
+
+  Widget sectionTitle({required String title}) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        Text(
+          title,
+          style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 24),
+        ),
+
+        const Text(
+          'See all',
+          style: TextStyle(
+            fontWeight: FontWeight.w600,
+            fontSize: 16,
+            color: Color(0xff53B175),
+          ),
+        ),
+      ],
     );
   }
 }

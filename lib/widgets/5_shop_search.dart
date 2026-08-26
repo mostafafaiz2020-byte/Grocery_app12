@@ -1,4 +1,4 @@
-// widgets/search_store.dart
+// widgets/5_shop_search.dart
 import 'package:flutter/material.dart';
 
 class SearchStore extends StatelessWidget {

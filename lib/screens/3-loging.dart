@@ -1,14 +1,14 @@
 // screens/3-loging.dart
-
-import '4-BottomNavigationBar.dart';
 import 'package:flutter/material.dart';
-import 'package:grocery_app1/widgets/login_Logo.dart';
+
+import '../widgets/logo.dart';
 import '../widgets/email_field.dart';
-import '../widgets/login_header.dart';
+import '../widgets/3_login_header.dart';
 import '../widgets/password_field.dart';
-import '../widgets/forgot_password.dart';
-import '../widgets/login_button.dart';
-import '../widgets/signup_row.dart';
+import '../widgets/3_login_forgot_password.dart';
+import '../widgets/3_login_button.dart';
+import '../widgets/3_login_signup_row.dart';
+import '4-BottomNavigationBar.dart';
 
 class LogingScrreen extends StatefulWidget {
   const LogingScrreen({super.key});
@@ -87,10 +87,11 @@ class _LogingScrreenState extends State<LogingScrreen> {
                   LoginButton(
                     onPressed: () {
                       if (formKey.currentState!.validate()) {
-                        Navigator.push(
+                        Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const shopScreen(),
+                            builder: (context) =>
+                                const BottomNavigationScreen(),
                           ),
                         );
                       }

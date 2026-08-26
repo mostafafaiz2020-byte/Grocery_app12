@@ -1,15 +1,14 @@
 // screens/2-Register.dart
-
 import 'package:flutter/material.dart';
-import 'package:grocery_app1/widgets/login_Logo.dart';
-import 'package:grocery_app1/widgets/password_field.dart';
 
-import '../widgets/register_header.dart';
+import '../widgets/logo.dart';
+import '../widgets/password_field.dart';
+import '../widgets/2_register_header.dart';
 import '../widgets/username_field.dart';
 import '../widgets/email_field.dart';
-import '../widgets/terms_text.dart';
-import '../widgets/signup_button.dart';
-import '../widgets/login_row.dart';
+import '../widgets/2_register_terms_text.dart';
+import '../widgets/2_register_signup_button.dart';
+import '../widgets/2_register_login_row.dart';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({super.key});

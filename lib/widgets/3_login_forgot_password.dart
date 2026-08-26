@@ -1,5 +1,4 @@
-// widgets/forgot_password.dart
-
+// widgets/3_login_forgot_password.dart
 import 'package:flutter/material.dart';
 
 class ForgotPassword extends StatelessWidget {

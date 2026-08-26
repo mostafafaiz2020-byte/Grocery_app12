@@ -1,5 +1,4 @@
-// widgets/register_header.dart
-
+// widgets/2_register_header.dart
 import 'package:flutter/material.dart';
 
 class RegisterHeader extends StatelessWidget {
@@ -18,7 +17,9 @@ class RegisterHeader extends StatelessWidget {
             color: Color(0xFF20212B),
           ),
         ),
+
         SizedBox(height: 8),
+
         Text(
           'Enter your credentials to continue',
           style: TextStyle(fontSize: 14, color: Colors.grey),

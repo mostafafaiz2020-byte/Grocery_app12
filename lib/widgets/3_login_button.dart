@@ -1,11 +1,10 @@
-// widgets/signup_button.dart
-
+// widgets/3_login_button.dart
 import 'package:flutter/material.dart';
 
-class SignupButton extends StatelessWidget {
+class LoginButton extends StatelessWidget {
   final VoidCallback onPressed;
 
-  const SignupButton({super.key, required this.onPressed});
+  const LoginButton({super.key, required this.onPressed});
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +22,7 @@ class SignupButton extends StatelessWidget {
           ),
         ),
         child: const Text(
-          'Sign Up',
+          'Log In',
           style: TextStyle(fontSize: 15, fontWeight: FontWeight.w600),
         ),
       ),

@@ -1,5 +1,4 @@
 // widgets/username_field.dart
-
 import 'package:flutter/material.dart';
 
 class UsernameField extends StatelessWidget {
@@ -20,7 +19,9 @@ class UsernameField extends StatelessWidget {
             fontWeight: FontWeight.w500,
           ),
         ),
+
         const SizedBox(height: 8),
+
         TextFormField(
           controller: controller,
           decoration: const InputDecoration(

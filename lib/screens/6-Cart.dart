@@ -1,5 +1,4 @@
 // screens/6-Cart.dart
-
 import 'package:flutter/material.dart';
 
 class Cart extends StatelessWidget {
@@ -7,6 +6,6 @@ class Cart extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(child: Text('Cart'));
+    return const Center(child: Text('Cart'));
   }
 }

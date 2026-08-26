@@ -1,5 +1,4 @@
-// widgets/terms_text.dart
-
+// widgets/2_register_terms_text.dart
 import 'package:flutter/material.dart';
 
 class TermsText extends StatelessWidget {

@@ -1,5 +1,4 @@
-// widgets/shop_header.dart
-
+// widgets/5_shop_header.dart
 import 'package:flutter/material.dart';
 
 class ShopHeader extends StatelessWidget {
@@ -9,7 +8,7 @@ class ShopHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Center(child: Image.asset('assets/images/Group (1).png')),
+        Center(child: Image.asset('assets/images/carrot.png')),
 
         const SizedBox(height: 21),
 

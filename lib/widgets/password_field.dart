@@ -1,5 +1,4 @@
 // widgets/password_field.dart
-
 import 'package:flutter/material.dart';
 
 class PasswordField extends StatelessWidget {
@@ -27,7 +26,9 @@ class PasswordField extends StatelessWidget {
             fontWeight: FontWeight.w500,
           ),
         ),
+
         const SizedBox(height: 8),
+
         TextFormField(
           controller: controller,
           obscureText: isPasswordHidden,

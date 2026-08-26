@@ -1,5 +1,4 @@
 // screens/1-home.dart
-
 import 'package:flutter/material.dart';
 import '2-Register.dart';
 
@@ -17,7 +16,7 @@ class _HomeState extends State<Home> {
       body: Stack(
         fit: StackFit.expand,
         children: [
-          Image.asset('assets/images/image.png', fit: BoxFit.cover),
+          Image.asset('assets/images/home.png', fit: BoxFit.cover),
 
           Container(
             decoration: BoxDecoration(
@@ -81,16 +80,13 @@ class _HomeState extends State<Home> {
                           ),
                         );
                       },
-
                       style: ElevatedButton.styleFrom(
                         backgroundColor: const Color(0xff53B175),
                         foregroundColor: Colors.white,
-
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10),
                         ),
                       ),
-
                       child: const Text(
                         'Get Started',
                         style: TextStyle(
