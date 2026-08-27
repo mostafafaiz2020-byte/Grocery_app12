@@ -1,7 +1,7 @@
 // grocery_app.dart
 import 'package:flutter/material.dart';
-
-import 'screens/1-home.dart';
+import 'package:grocery_app1/screens/1-home.dart';
+import 'package:grocery_app1/screens/apple_screen.dart';
 
 class GroceryApp extends StatelessWidget {
   const GroceryApp({super.key});

@@ -1,4 +1,5 @@
 // screens/4-BottomNavigationBar.dart
+
 import 'package:flutter/material.dart';
 
 import '5-Shop.dart';
@@ -29,31 +30,44 @@ class _BottomNavigationScreenState extends State<BottomNavigationScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
+
       body: SafeArea(child: screens[currentIndex]),
+
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: currentIndex,
+
         onTap: (index) {
           setState(() {
             currentIndex = index;
           });
         },
+
         backgroundColor: Colors.white,
+
         selectedItemColor: const Color(0XFF53B175),
+
+        unselectedItemColor: Colors.black,
+
         type: BottomNavigationBarType.fixed,
+
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.storefront), label: 'Shop'),
+
           BottomNavigationBarItem(
             icon: Icon(Icons.manage_search),
             label: 'Explor',
           ),
+
           BottomNavigationBarItem(
             icon: Icon(Icons.shopping_cart_outlined),
             label: 'Cart',
           ),
+
           BottomNavigationBarItem(
             icon: Icon(Icons.favorite_outline),
             label: 'Favorite',
           ),
+
           BottomNavigationBarItem(
             icon: Icon(Icons.person_3_outlined),
             label: 'Account',

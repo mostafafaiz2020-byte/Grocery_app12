@@ -70,3 +70,76 @@ class Exclusive extends StatelessWidget {
     );
   }
 }
+
+List<ProductModel> products = [
+  ProductModel(
+    image: 'assets/images/Bananas.png',
+    titel: 'Organic Bananas',
+    descripion: '7pcs, Priceg',
+    price: 4.5,
+  ),
+
+  ProductModel(
+    image: 'assets/images/pngfuel 1 (2).png',
+    titel: 'Red Apple',
+    descripion: '1kg, Priceg',
+    price: 8,
+  ),
+
+  ProductModel(
+    image: 'assets/images/carrot.png',
+    titel: 'Organic Bananas',
+    descripion: '7pcs, Priceg',
+    price: 4,
+  ),
+
+  ProductModel(
+    image: 'assets/images/Ginger.png',
+    titel: 'Organic Bananas',
+    descripion: '7pcs, Priceg',
+    price: 6,
+  ),
+
+  ProductModel(
+    image: 'assets/images/Bell Pepper Red.png',
+    titel: 'Organic Bananas',
+    descripion: '7pcs, Priceg',
+    price: 9,
+  ),
+];
+List<ProductModel> product_Best_Selling = [
+  ProductModel(
+    image: 'assets/images/pngfuel 9.png',
+    titel: 'Meat & Fish',
+    descripion: '7pcs, Priceg',
+    price: 4.5,
+  ),
+
+  ProductModel(
+    image: 'assets/images/pngfuel 6.png',
+    titel: 'Beverages',
+    descripion: '1kg, Priceg',
+    price: 8,
+  ),
+
+  ProductModel(
+    image: 'assets/images/pngfuel 16.png',
+    titel: 'Egg Chicken Red',
+    descripion: '4pcs, Price',
+    price: 15,
+  ),
+
+  ProductModel(
+    image: '',
+    titel: 'Egg Pasta ',
+    descripion: '30gm, Price',
+    price: 15.99,
+  ),
+
+  ProductModel(
+    image: 'assets/images/American-Garden-Mayonnaise-Eggless-473ml 2.png',
+    titel: 'Mayonnais Eggless',
+    descripion: '7pcs, Priceg',
+    price: 9,
+  ),
+];
